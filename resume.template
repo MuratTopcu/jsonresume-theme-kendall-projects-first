@@ -43,6 +43,54 @@
             <p>{{{basics.summary}}}</p>
           </div>
           {{/basics.summary}}
+          {{#projectsBool}}
+          <!-- PROJECTS -->
+          <div class="box">
+            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
+            {{#projects}}
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">{{name}}</div>
+                    {{#url}}
+                    <div class="address">
+                      <a href="{{url}}" target= "_blank"><i class="fas fa-globe ico"></i> {{url}}</a>
+                    </div>
+                    {{/url}}
+                    {{#startDateYear}}
+                    <div class="year">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</div>
+                    {{/startDateYear}}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    {{#roles}}
+                    <div class="profession">{{.}}</div>
+                    {{/roles}}
+                    <div class="description">
+                      {{{description}}}
+                      {{#boolHighlights}}
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        {{#highlights}}
+                        <li class="list-group-item">{{{.}}}</li>
+                        {{/highlights}}
+                      </ul>
+                      {{/boolHighlights}}
+                      {{#boolKeywords}}
+                      <div class="keywords">
+                        {{#keywords}}
+                        <span class="skill badge">{{{.}}}</span>
+                        {{/keywords}}
+                      </div>
+                      {{/boolKeywords}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/projects}}
+          </div>
+          {{/projectsBool}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box">
@@ -147,19 +195,6 @@
             {{/volunteer}}
           </div>
           {{/volunteerBool}}
-          {{#projectsBool}}
-          <!-- PROJECTS -->
-          <div class="box">
-            <h2><i class= "fas fa-code-branch ico"></i> Projects</h2>
-            <ul class="list-group">
-              {{#projects}}
-              <li class="list-group-item">
-                <span style="font-weight:bold">{{name}}</span>: {{description}}
-              </li>
-              {{/projects}}
-            </ul>
-          </div>
-          {{/projectsBool}}
         </div>
         <div class="col-xs-12 col-sm-5">
           <!-- CONTACT -->

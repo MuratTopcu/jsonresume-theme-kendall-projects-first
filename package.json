@@ -1,12 +1,18 @@
 {
-  "name": "jsonresume-theme-kendall",
-  "version": "0.2.0",
-  "description": "A JSON Resume theme built with bootstrap",
+  "name": "jsonresume-theme-kendall-projects-first",
+  "version": "0.1.0",
+  "description": "A JSON Resume theme based on Kendall with Projects section displayed before Work Experience. Perfect for developers and portfolio-focused professionals.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "M. Adam Kendall",
+  "author": "Murat Topcu <murat@topcu.dev>",
+  "contributors": [
+    {
+      "name": "M. Adam Kendall",
+      "url": "https://github.com/linuxbozo"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "gravatar": "^1.0.6",
@@ -15,15 +21,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linuxbozo/jsonresume-theme-kendall.git"
+    "url": "https://github.com/MuratTopcu/jsonresume-theme-kendall-projects-first.git"
   },
   "keywords": [
     "json",
     "jsonresume",
-    "theme"
+    "theme",
+    "kendall",
+    "projects",
+    "portfolio",
+    "developer",
+    "resume",
+    "cv"
   ],
   "bugs": {
-    "url": "https://github.com/linuxbozo/jsonresume-theme-kendall/issues"
+    "url": "https://github.com/MuratTopcu/jsonresume-theme-kendall-projects-first/issues"
   },
-  "homepage": "https://github.com/linuxbozo/jsonresume-theme-kendall"
+  "homepage": "https://github.com/MuratTopcu/jsonresume-theme-kendall-projects-first"
 }
